@@ -1,0 +1,92 @@
+{
+	"folders": {},
+	"connections": {
+		"postgres-jdbc-16acbb93351-6321ab0fa64442a2": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "PostgreSQL - postgres",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "postgres",
+				"url": "jdbc:postgresql://localhost:5432/postgres",
+				"home": "postgresql-x64-9.6",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "true",
+					"@dbeaver-show-template-db@": "false"
+				}
+			},
+			"custom-properties": {
+				"resultset.maxrows": "2000"
+			}
+		},
+		"postgres-jdbc-17e3bfea3d6-3d60538b2f0f6573": {
+			"provider": "postgresql",
+			"driver": "postgres-jdbc",
+			"name": "PostgreSQL - nenadv_sts",
+			"save-password": true,
+			"read-only": false,
+			"configuration": {
+				"host": "localhost",
+				"port": "5432",
+				"database": "nenadv_sts",
+				"url": "jdbc:postgresql://localhost:5432/nenadv_sts",
+				"home": "postgresql-x64-9.6",
+				"type": "dev",
+				"provider-properties": {
+					"@dbeaver-show-non-default-db@": "false",
+					"@dbeaver-show-template-db@": "false",
+					"@dbeaver-show-unavailable-db@": "false",
+					"show-database-statistics": "false",
+					"@dbeaver-read-all-data-types-db@": "false",
+					"@dbeaver-use-prepared-statements-db@": "false",
+					"postgresql.dd.plain.string": "false",
+					"postgresql.dd.tag.string": "false"
+				},
+				"auth-model": "native",
+				"handlers": {}
+			}
+		}
+	},
+	"virtual-models": {
+		"postgres-jdbc-16acbb93351-6321ab0fa64442a2": {
+			"nenadv_sts": {
+				"public": {
+					":trail_entry_id_seq": {
+						"constraints": {
+							"PRIMARY": {
+								"type": "vpk",
+								"attributes": [
+									"sequence_name",
+									"last_value",
+									"start_value",
+									"increment_by",
+									"max_value",
+									"min_value",
+									"cache_value",
+									"log_cnt",
+									"is_cycled",
+									"is_called"
+								]
+							}
+						}
+					}
+				}
+			}
+		}
+	},
+	"connection-types": {
+		"dev": {
+			"name": "Development",
+			"color": "255,255,255",
+			"description": "Regular development database",
+			"auto-commit": true,
+			"confirm-execute": false,
+			"confirm-data-change": false,
+			"auto-close-transactions": false
+		}
+	}
+}

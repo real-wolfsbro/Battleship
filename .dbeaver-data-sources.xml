@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data-sources>
+	<data-source id="postgres-jdbc-16acbb93351-6321ab0fa64442a2" provider="postgresql" driver="postgres-jdbc" name="PostgreSQL - postgres" save-password="true" read-only="false">
+		<connection host="localhost" port="5432" server="" database="postgres" url="jdbc:postgresql://localhost:5432/postgres" user="postgres" password="I1QVNEZRFwVEcuc=" home="postgresql-x64-9.6" type="dev">
+			<provider-property name="@dbeaver-show-non-default-db@" value="true"/>
+			<provider-property name="@dbeaver-show-template-db@" value="false"/>
+		</connection>
+		<virtual-meta-data>
+			<container name="model">
+				<container name="nenadv_sts">
+					<container name="public">
+						<entity name="trail_entry_id_seq">
+							<constraint name="PRIMARY" type="VIRTUAL PRIMARY KEY">
+								<attribute name="sequence_name"/>
+								<attribute name="last_value"/>
+								<attribute name="start_value"/>
+								<attribute name="increment_by"/>
+								<attribute name="max_value"/>
+								<attribute name="min_value"/>
+								<attribute name="cache_value"/>
+								<attribute name="log_cnt"/>
+								<attribute name="is_cycled"/>
+								<attribute name="is_called"/>
+							</constraint>
+						</entity>
+					</container>
+				</container>
+			</container>
+		</virtual-meta-data>
+		<custom-property name="resultset.maxrows" value="2000"/>
+	</data-source>
+	<data-source id="postgres-jdbc-17e3bfea3d6-3d60538b2f0f6573" provider="postgresql" driver="postgres-jdbc" name="PostgreSQL - nenadv_sts" save-password="true" read-only="false">
+		<connection host="localhost" port="5432" server="" database="nenadv_sts" url="jdbc:postgresql://localhost:5432/nenadv_sts" user="nenadv_stsaoo" password="HVUwElkCEwdl8w==" home="postgresql-x64-9.6" type="dev">
+			<provider-property name="@dbeaver-show-non-default-db@" value="false"/>
+			<provider-property name="@dbeaver-show-template-db@" value="false"/>
+		</connection>
+	</data-source>
+	<filters/>
+</data-sources>
